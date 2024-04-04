@@ -1,0 +1,125 @@
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+
+}
+
+.colse{
+    font-size: 25px;
+    color:#fff;
+    cursor: pointer;
+    background-color: #d33638;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 30px 0 0 30px;
+    border-radius: 4px;
+    font-weight: 500;
+   
+
+}
+
+.chart{
+    width: 767px;
+    margin: auto;
+    padding: 30px ;
+    margin-top: 50px;
+    border: solid 2px #525253;
+    border-radius: 15px;
+    background-color: #18181ce6;
+
+    
+
+}
+
+.graph{
+    width: 740px;
+    height: 300px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    margin: 0 10px 20px;
+    
+}
+.name img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.name p {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.type{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.type button{
+    width: 200px;
+    margin: 0;
+    padding: 10px 5px;
+    cursor: pointer;
+    color: #3874ff;
+}
+
+.type .selected {
+    background-color: #3874ff;
+    color:#fff;
+
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 20px 0;
+
+}
+.details div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.details p{
+   color: #3874ff;
+   font-weight: 700;
+}
+
+@media screen and (max-width:767px) {
+ .chart{
+    width: 400px;
+ }
+ .name img{
+    width: 30px;
+ }
+ .name p{
+    font-size: 1rem;
+ }
+ .graph{
+    width: 360px;
+
+ }
+ .type{
+    width: 100%;
+    flex-direction: column;
+    }
+    .type button{
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        }
+        .details{
+            display: none;
+        }
+}
